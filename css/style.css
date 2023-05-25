@@ -246,3 +246,38 @@ footer{
     color: white;
     padding: 0px 200px 70px 200px;
 }
+
+/*HITS*/
+
+.SectionHits{
+    background-color: #04080F;
+}
+
+
+.TituloHits{
+    text-align: center;
+    color: white;
+    padding: 40px 0px 40px 0px;
+    font-size: 60px;
+    letter-spacing: 20px;
+}
+
+.ImgHits{
+    height: 400px;
+    width: 600px;
+    padding: 20px 90px 20px 90px;
+}
+
+.TituloMusical{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 90px;
+}
+
+.ParrafoMusical{
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-right: 90px;   
+}

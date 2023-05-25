@@ -112,15 +112,19 @@ footer{
         height: 400px;
         width: 500px;
     }
+   
 }
  @media screen and (max-width: 550px){
         .inicio img{
             height: 300px;
             width: 300px;
         }
+        
 }
 
 /**/
+
+
 
 .MainIntegrantes{
     background-color: #04080F;
@@ -148,7 +152,7 @@ footer{
 }
 
 .IntegrantesTexto{
-    padding-top: 80px;
+    padding-top: 40px;
 }
 
 .IntegrantesCaja,.IntegrantesCaja2 {
@@ -184,6 +188,13 @@ footer{
       transform: translateX(0);
     }
   }
+
+
+@media screen and (max-width: 550px){
+    .TituloIntegrantes{
+        font-size: 30px;
+    }
+}
 
   /*BIOGRAFIA*/
 
@@ -310,3 +321,75 @@ footer{
     background-color: #04080F;
     color: white;
 }
+.ContenerHistoria1{
+    margin: 0;
+    padding: 0;
+}
+
+.ImgBandaHistoria{
+    height: 800px;
+    width: 600px;
+}
+.TituloHistoriaMusical{
+    text-align: center;
+    font-size: 50px;
+    padding: 40px 0 20px 0;
+    letter-spacing: 10px;
+}
+
+.ParrafoHistoriaMusical,.AñoContenedorHistoria{
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+
+.Contenedorimg{
+    text-align: center;
+}
+
+.ContenedorHistoria2{
+    margin: 0;
+}
+.ContenedorAñoPublicacion{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+.ImgBandaHistoria2{
+    height: 800px;
+    width: 800px;
+    padding-bottom: 40px;
+}
+
+.ContenedorHistoria3{
+    margin: auto;
+    display: flex;
+}
+
+.TituloCancionHistoria,.ParrafoHistoriaCancion{
+    text-align: right;
+}
+.ContenedorimgHistoriaMusical3{
+    display: flex;
+    justify-content: center;
+}
+.ImgBandaHistoria3{
+    height: 750px;
+    width: 500px;
+    padding-bottom: 50px;
+    
+}
+.AñoContenedorHistoria{
+    text-align: center;
+}
+.TituloCancionContenedor3{
+    text-align: center;
+}
+
+.ParrafoCancionContenedor3{
+    text-align: center;
+}
+

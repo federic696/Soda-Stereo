@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Encabezado*/
+.Logo-Link{
+    height: 60px;
+}
+
+.NavegarSoda{
+    background-color: #5C6D70;
+    color: black;
+    font-size: 20px;
+}
+hr{
+    height: 80px;
+    width: 25%;
+    margin: -95px 0;
+    
+}
+
+
+.linkSoda:hover{
+    transition: 1s ease;
+    background:white;
+    border-radius: 55px;
+}
+
+.TituloNav{
+    font-weight: 100px;
+}
+
+/*main*/
+
+.presentacion{
+    background-color: #04080F;
+    color: aliceblue;
+}
+
+.titulo{
+    text-align: center;
+    padding: 40px;
+    font-size: 40px;
+}
+
+.inicio img{
+    display: block;
+    margin: auto;
+    height: 500px;
+    width: 900px;
+    padding-bottom: 50px;
+}
+
+.introducionTitulo{
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+
+.bandaIntroducion{
+    height: 700px;
+    width: 317px;
+    padding: 12% 10px 100px 20px;
+}
+
+.containerBanda{
+
+    display: flex;
+    justify-content: center;
+}
+
+/*footer*/
+
+footer{
+    display: block;
+    background-color: #5C6D70;
+    width: 100%;
+    height: 170px;
+
+}
+
+.footerSoda{
+    text-align: center;
+}
+
+.footerSoda img,p{
+    margin-top: 5px;
+}
+.Logo-Link-footer{
+    height: 45px;
+}
+.RedesSociales{
+    display: flex;
+    justify-content: center;
+    
+}
+.footerSocial{
+    height: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/*hover**Media*/
+
+/*main*/
+@media screen and (max-width: 935px){
+    .inicio img{
+        height: 400px;
+        width: 500px;
+    }
+}
+ @media screen and (max-width: 550px){
+        .inicio img{
+            height: 300px;
+            width: 300px;
+        }
+}
+
+/**/
+
+.MainIntegrantes{
+    background-color: #04080F;
+   
+}
+.TituloIntegrantes{
+    padding-top: 50px;
+    color: white;    
+    text-align: center;
+    
+}
+
+.IntegrantesCaja,.IntegrantesCaja2{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: white;
+}
+
+.imgIntegrante{
+    height: 300px;
+    width: 300px;
+   border-radius: 5px;
+}
+
+.IntegrantesTexto{
+    padding-top: 80px;
+}
+
+.IntegrantesCaja,.IntegrantesCaja2 {
+    overflow: hidden; 
+    width: 100%; 
+    animation: slide-in 1.5s forwards;
+}
+
+.IntegrantesCaja{
+ 
+    animation-name: slide-left;
+}
+.IntegrantesCaja2{
+   
+    animation-name: slide-right;
+}
+
+
+@keyframes slide-left {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slide-right {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  /*BIOGRAFIA*/
+
+  .MainContenedorBiografia{
+    background-color: #04080F;
+  }
+  .TituloBiografia{
+    color: white;
+    text-align: center;
+  }

@@ -281,3 +281,24 @@ footer{
     padding-top: 20px;
     padding-right: 90px;   
 }
+
+.CajaHit2{
+    padding-left: 80px;
+}
+
+.CajaHit3 {
+    display: flex;
+    text-align: center;
+}
+
+.CajaHit3 .ImgHits{
+    width: 900px;
+}
+
+.CajaHit3 .ParrafoMusical{
+    padding-bottom: 40px;
+}
+
+.CajaHit5{
+    padding-bottom: 40px;
+}

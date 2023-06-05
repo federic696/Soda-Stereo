@@ -1,0 +1,89 @@
+
+
+/*HITS*/
+
+.SectionHits{
+    background-color: #04080F;
+}
+
+
+.ContenedorHitGeneral{
+    overflow: hidden;
+    .ContenedorHit1{
+        flex: 1;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-name: slide-left;
+    }
+    .ContenedorHit2{
+        flex: 1;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-name: slide-right;
+        .CajaHit2{
+            padding-left: 80px;
+        }
+    }
+    .ContenedorHit3{
+        flex: 1;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-name: slide-left;
+        display: flex;
+        text-align: center;
+        .ParrafoMusical{
+            padding-bottom: 40px;
+        }
+        .ImgHits{
+            width: 900px;
+        }
+    }
+    .ContenedorHit4{
+        flex: 1;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-name: slide-right;
+    }
+    .ContenedorHit5{
+        flex: 1;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-name: slide-left;
+        padding-bottom: 40px;
+    }
+}
+
+.TitulosHits{
+    .TituloHits{
+        text-align: center;
+        color: white;
+        padding: 40px 0px 40px 0px;
+        font-size: 60px;
+        letter-spacing: 20px;
+    }
+}
+
+
+
+
+
+.ImgHits{
+    height: 400px;
+    width: 600px;
+    padding: 20px 90px 20px 90px;
+}
+
+.TituloMusical{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 90px;
+}
+
+.ParrafoMusical{
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    
+}
+

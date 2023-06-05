@@ -1,0 +1,98 @@
+/*HISTORIA MUSICALES*/
+
+.HistoriaMusicales{
+    background-color: #04080F;
+    color: white;
+    overflow: hidden;
+
+    .TituloHM{
+        flex: 1; 
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-name: slide-right;
+        .TituloHistoriaMusical{
+            text-align: center;
+            font-size: 50px;
+            padding: 40px 0 20px 0;
+            letter-spacing: 10px;
+        }
+        .ParrafoHistoriaMusical{
+            font-size: 30px;
+            text-align: center;
+            padding-bottom: 40px;
+            padding-top: 40px;
+        }
+    
+    }
+
+    .ContenerHistoria1{
+        flex: 1; 
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-name: slide-left;
+        .Contenedorimg{
+            text-align: center;
+        }
+
+        
+    }
+    .ContenedorHistoria2{
+        flex: 1; 
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-name: slide-right;
+        .ImgBandaHistoria2{
+            height: 800px;
+            width: 700px;
+            padding-bottom: 50px;
+        }
+        .TituloCancionHistoria,.ParrafoHistoriaCancion{
+            text-align: right;
+        }
+    }
+
+    .ContenedorHistoria3{
+        margin: auto;
+        display: flex;
+        flex: 1; 
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-name: slide-left;
+        .ContenedorimgHistoriaMusical3{
+            display: flex;
+            justify-content: center;
+        }
+        .ImgBandaHistoria3{
+            height: 750px;
+            width: 500px;
+            padding-bottom: 50px;
+            
+        }
+        .TituloCancionContenedor3,.ParrafoCancionContenedor3,.AñoContenedorHistoria{
+            text-align: center;
+        }
+        
+    }
+
+}
+
+
+.ImgBandaHistoria{
+    height: 800px;
+    width: 600px;
+}
+
+.AñoContenedorHistoria{
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+
+.ContenedorAñoPublicacion{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+}
+

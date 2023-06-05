@@ -1,0 +1,50 @@
+.presentacion{
+    background-color: #04080F;
+    color: aliceblue;
+
+    .inicio{
+        .titulo{
+            text-align: center;
+            padding: 40px;
+            font-size: 40px;
+            font-size: 60px;
+            letter-spacing: 20px;
+        }
+        img{
+            display: block;
+            margin: auto;
+            height: 500px;
+            width: 900px;
+            padding-bottom: 50px;
+        }
+
+    }
+    .container{
+        .introducionTitulo{
+            margin-bottom: 30px;
+            font-size: 40px;
+        }
+    }
+    .bandaIntroducion{
+        height: 700px;
+        width: 317px;
+        padding: 12% 10px 100px 20px;
+    }
+    @media screen and (max-width: 935px){
+        .inicio img{
+            height: 400px;
+            width: 500px;
+        }
+       
+    }
+     @media screen and (max-width: 550px){
+            .inicio img{
+                height: 300px;
+                width: 300px;
+            }
+            
+    }
+
+}
+
+

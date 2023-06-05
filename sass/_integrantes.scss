@@ -1,0 +1,45 @@
+.MainIntegrantes{
+    background-color: #04080F;
+    overflow: hidden;
+    .TituloIntegrantes{
+        padding-top: 50px;
+        color: white;    
+        text-align: center;
+        font-size: 60px;
+        letter-spacing: 10px;
+        
+    }
+    .IntegrantesCaja,
+    .IntegrantesCaja2{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        color: white;
+        width: 100%; 
+        animation: slide-in 1.5s forwards;
+    }
+
+    .imgIntegrante{
+        height: 300px;
+        width: 300px;
+       border-radius: 5px;
+    }
+
+    .IntegrantesTexto{
+        padding-top: 40px;
+    }
+    .IntegrantesCaja{
+ 
+        animation-name: slide-left;
+    }
+    .IntegrantesCaja2{
+       
+        animation-name: slide-right;
+    }
+    @media screen and (max-width: 550px){
+        .TituloIntegrantes{
+            font-size: 30px;
+        }
+    }
+}
+
+

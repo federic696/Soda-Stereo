@@ -9,32 +9,50 @@
         letter-spacing: 10px;
         
     }
-    .IntegrantesCaja,
-    .IntegrantesCaja2{
+    .IntegrantesCaja{
         padding-top: 60px;
         padding-bottom: 60px;
         color: white;
         width: 100%; 
-        animation: slide-in 1.5s forwards;
+    }
+
+    .IntegrantesCaja2{
+        @extend .IntegrantesCaja;
+        
+        .IntegrantesTexto{
+            flex: 1;
+        }
+        .imgIntegrante{
+            flex: 1;
+        }
     }
 
     .imgIntegrante{
         height: 300px;
         width: 300px;
-       border-radius: 5px;
+        border-radius: 5px;
     }
 
     .IntegrantesTexto{
         padding-top: 40px;
     }
-    .IntegrantesCaja{
- 
-        animation-name: slide-left;
-    }
-    .IntegrantesCaja2{
-       
-        animation-name: slide-right;
-    }
+    
+
+    @media (max-width: 990px) {
+        .IntegrantesCaja2 {
+          flex-direction: column;
+          .IntegrantesTexto {
+            order: 2;
+          }
+        
+          .imgIntegrante {
+            order: 1;
+          }
+        }
+      
+      
+      }
+
     @media screen and (max-width: 550px){
         .TituloIntegrantes{
             font-size: 30px;

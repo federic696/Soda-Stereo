@@ -1,46 +1,50 @@
+@mixin Diseño($height,$width){
+    height: $height;
+    width: $width;
+}
 .presentacion{
     background-color: #04080F;
     color: aliceblue;
 
     .inicio{
-        .titulo{
+        .TituloHome{
             text-align: center;
             padding: 40px;
-            font-size: 40px;
             font-size: 60px;
             letter-spacing: 20px;
         }
         img{
             display: block;
             margin: auto;
-            height: 500px;
-            width: 900px;
+            @include Diseño(500px,900px);
             padding-bottom: 50px;
         }
 
     }
-    .container{
+    .HomeInicio{
         .introducionTitulo{
-            margin-bottom: 30px;
+            padding-bottom: 30px;
             font-size: 40px;
         }
+        .introducionHistoria{
+            padding-bottom: 40px;
+        }
+       
     }
+    
     .bandaIntroducion{
-        height: 700px;
-        width: 317px;
+        @include Diseño(700px,310px);
         padding: 12% 10px 100px 20px;
     }
     @media screen and (max-width: 935px){
         .inicio img{
-            height: 400px;
-            width: 500px;
+            @include Diseño(400px,500px);
         }
        
     }
-     @media screen and (max-width: 550px){
+    @media screen and (max-width: 550px){
             .inicio img{
-                height: 300px;
-                width: 300px;
+                @include Diseño(300px,300px);
             }
             
     }

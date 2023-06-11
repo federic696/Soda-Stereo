@@ -1,17 +1,9 @@
 /*BIOGRAFIA*/
 
-
-
 .SectionBiografia{
     background-color: #04080F;
     overflow: hidden;  
    
-    .ContenedorDeBiografias{
-        animation-name: slide-right;
-        flex: 1; 
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-    }
     .ContenerdorBiografia{
         padding-bottom: 50px; 
     }
@@ -22,10 +14,6 @@
 .InicioBiografia{
     display: block;
     text-align: center;
-    animation-name: slide-left;
-    flex: 1; 
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
     .TituloBiografia{
         color: white; 
         font-size: 60px;
@@ -50,7 +38,7 @@
     .InfoBiografia{
         color: white;
         padding-top: 90px;
-        padding-right: 20px;
+        
     }
 
 }
@@ -59,7 +47,6 @@
     .InfoBiografia2{
         color: white;
         padding-top: 90px;
-        padding-left: 30px;
     }   
     .ImgBiografia2{
         height: 300px;
@@ -77,13 +64,14 @@
     
     .InfoBiografiaCentral{
         color: white;
-        padding: 80px 200px 0px 200px;
+        padding-top: 40px;
     }
     
     .InfoBiografiaCentral2{
-        color: white;
-        padding: 0px 200px 70px 200px;
+        @extend .InfoBiografiaCentral;
     }
 }
 
-
+@media screen and (max-width: 550px){
+    
+}

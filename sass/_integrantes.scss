@@ -1,3 +1,8 @@
+@mixin Diseño($height,$width){
+    height: $height;
+    width: $width;
+}
+
 .MainIntegrantes{
     background-color: #04080F;
     overflow: hidden;
@@ -27,8 +32,7 @@
     }
 
     .imgIntegrante{
-        height: 300px;
-        width: 300px;
+        @include Diseño(300px,300px);
         border-radius: 5px;
     }
 

@@ -1,4 +1,9 @@
 /*BIOGRAFIA*/
+@mixin Diseño($height,$width){
+    height: $height;
+    width: $width;
+}
+
 
 .SectionBiografia{
     background-color: #04080F;
@@ -19,8 +24,7 @@
         padding-bottom: 20px;
     }
     .InicioBiografiaImg{
-        height: 400px;
-        width: 700px;
+        @include Diseño(400px,700px);
         padding-top: 70px;
         padding-bottom: 30px;
         
@@ -30,8 +34,7 @@
 
 .ContenerdorBiografia{
     .ImgBiografia{
-        height: 300px;
-        width: 600px;
+        @include Diseño(300px,600px);
     }
     .InfoBiografia{
         color: white;
@@ -48,15 +51,13 @@
        
     }   
     .ImgBiografia2{
-        height: 300px;
-        width: 600px;
+        @include Diseño(300px,600px);
     }
 }
 
 .ContenerdorBiografia{
     .ImgBiografiaJuntas{
-        height: 300px;
-        width: 500px;
+        @include Diseño(300px,500px);
         padding: 40px 30px 0px 30px;
     }
     
@@ -74,8 +75,7 @@
 @media screen and (max-width: 935px){
     .InicioBiografia{
         .InicioBiografiaImg{
-            height: 300px;
-            width: 400px;
+            @include Diseño(300px,400px);
         }
         .TituloBiografia{
             color: white; 
@@ -87,19 +87,16 @@
     }
     .ContenerdorBiografia2{
        .ImgBiografia2{
-           height: 300px;
-           width: 400px;
+        @include Diseño(300px,400px);
            
        }
    }
     .ContenerdorBiografia{
         .ImgBiografia{
-            height: 300px;
-            width: 400px;
+            @include Diseño(300px,400px);
         }
         .ImgBiografiaJuntas{
-            height: 300px;
-            width: 400px;
+            @include Diseño(300px,400px);
             
         }
     }

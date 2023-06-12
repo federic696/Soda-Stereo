@@ -3,7 +3,6 @@
 .SectionBiografia{
     background-color: #04080F;
     overflow: hidden;  
-   
     .ContenerdorBiografia{
         padding-bottom: 50px; 
     }
@@ -12,13 +11,12 @@
 
 
 .InicioBiografia{
-    display: block;
     text-align: center;
     .TituloBiografia{
         color: white; 
         font-size: 60px;
         letter-spacing: 20px;
-        padding: 20px 0px 50px 0px;
+        padding-bottom: 20px;
     }
     .InicioBiografiaImg{
         height: 400px;
@@ -43,17 +41,17 @@
 
 }
 
-.ContenerdorBiografia{
+.ContenerdorBiografia2{
     .InfoBiografia2{
         color: white;
         padding-top: 90px;
+       
     }   
     .ImgBiografia2{
         height: 300px;
         width: 600px;
     }
 }
-
 
 .ContenerdorBiografia{
     .ImgBiografiaJuntas{
@@ -72,6 +70,37 @@
     }
 }
 
-@media screen and (max-width: 550px){
-    
+
+@media screen and (max-width: 935px){
+    .InicioBiografia{
+        .InicioBiografiaImg{
+            height: 300px;
+            width: 400px;
+        }
+        .TituloBiografia{
+            color: white; 
+            font-size: 40px;
+            letter-spacing: 10px;
+            padding-bottom: 10px;
+           
+        }
+    }
+    .ContenerdorBiografia2{
+       .ImgBiografia2{
+           height: 300px;
+           width: 400px;
+           
+       }
+   }
+    .ContenerdorBiografia{
+        .ImgBiografia{
+            height: 300px;
+            width: 400px;
+        }
+        .ImgBiografiaJuntas{
+            height: 300px;
+            width: 400px;
+            
+        }
+    }
 }

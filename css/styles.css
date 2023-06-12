@@ -99,14 +99,13 @@
 }
 
 .InicioBiografia {
-  display: block;
   text-align: center;
 }
 .InicioBiografia .TituloBiografia {
   color: white;
   font-size: 60px;
   letter-spacing: 20px;
-  padding: 20px 0px 50px 0px;
+  padding-bottom: 20px;
 }
 .InicioBiografia .InicioBiografiaImg {
   height: 400px;
@@ -124,11 +123,11 @@
   padding-top: 90px;
 }
 
-.ContenerdorBiografia .InfoBiografia2 {
+.ContenerdorBiografia2 .InfoBiografia2 {
   color: white;
   padding-top: 90px;
 }
-.ContenerdorBiografia .ImgBiografia2 {
+.ContenerdorBiografia2 .ImgBiografia2 {
   height: 300px;
   width: 600px;
 }
@@ -142,6 +141,30 @@
   color: white;
   padding-top: 40px;
 }
+@media screen and (max-width: 935px) {
+  .InicioBiografia .InicioBiografiaImg {
+    height: 300px;
+    width: 400px;
+  }
+  .InicioBiografia .TituloBiografia {
+    color: white;
+    font-size: 40px;
+    letter-spacing: 10px;
+    padding-bottom: 10px;
+  }
+  .ContenerdorBiografia2 .ImgBiografia2 {
+    height: 300px;
+    width: 400px;
+  }
+  .ContenerdorBiografia .ImgBiografia {
+    height: 300px;
+    width: 400px;
+  }
+  .ContenerdorBiografia .ImgBiografiaJuntas {
+    height: 300px;
+    width: 400px;
+  }
+}
 /*HITS*/
 .SectionHits {
   background-color: #04080F;
@@ -150,27 +173,7 @@
 .ContenedorHitGeneral {
   overflow: hidden;
 }
-.ContenedorHitGeneral .ContenedorHit1 {
-  flex: 1;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-name: slide-left;
-}
-.ContenedorHitGeneral .ContenedorHit2 {
-  flex: 1;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-name: slide-right;
-}
-.ContenedorHitGeneral .ContenedorHit2 .CajaHit2 {
-  padding-left: 80px;
-}
 .ContenedorHitGeneral .ContenedorHit3 {
-  flex: 1;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-name: slide-left;
-  display: flex;
   text-align: center;
 }
 .ContenedorHitGeneral .ContenedorHit3 .ParrafoMusical {
@@ -179,18 +182,28 @@
 .ContenedorHitGeneral .ContenedorHit3 .ImgHits {
   width: 900px;
 }
-.ContenedorHitGeneral .ContenedorHit4 {
-  flex: 1;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-name: slide-right;
-}
 .ContenedorHitGeneral .ContenedorHit5 {
-  flex: 1;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-name: slide-left;
   padding-bottom: 40px;
+}
+
+.ContenedorHit2 {
+  display: flex;
+}
+.ContenedorHit2 .CajaHit2 {
+  flex: 1;
+}
+.ContenedorHit2 .CajaImgHit2 {
+  flex: 1;
+}
+
+.ContenedorHit5 {
+  display: flex;
+}
+.ContenedorHit5 .CajaHit5 {
+  flex: 1;
+}
+.ContenedorHit5 .CajaImgHit5 {
+  flex: 1;
 }
 
 .TitulosHits .TituloHits {
@@ -210,27 +223,48 @@
 .TituloMusical {
   color: white;
   font-size: 50px;
-  text-align: center;
   padding-top: 90px;
 }
 
 .ParrafoMusical {
   color: white;
-  text-align: center;
   padding-top: 20px;
 }
 
+@media screen and (max-width: 1000px) {
+  .ImgHits {
+    height: 300px;
+    width: 400px;
+    padding: 0;
+  }
+  .ContenedorHitGeneral .ContenedorHit3 .ImgHits {
+    width: 400px;
+    padding-top: 40px;
+  }
+  .ContenedorHit2 {
+    flex-direction: column;
+  }
+  .ContenedorHit2 .CajaHit2 {
+    order: 2;
+  }
+  .ContenedorHit2 .CajaImgHit2 {
+    order: 1;
+  }
+  .ContenedorHit5 {
+    flex-direction: column;
+  }
+  .ContenedorHit5 .CajaHit5 {
+    order: 2;
+  }
+  .ContenedorHit5 .CajaImgHit5 {
+    order: 1;
+  }
+}
 /*HISTORIA MUSICALES*/
 .HistoriaMusicales {
   background-color: #04080F;
   color: white;
   overflow: hidden;
-}
-.HistoriaMusicales .TituloHM {
-  flex: 1;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-name: slide-right;
 }
 .HistoriaMusicales .TituloHM .TituloHistoriaMusical {
   text-align: center;
@@ -244,68 +278,57 @@
   padding-bottom: 40px;
   padding-top: 40px;
 }
-.HistoriaMusicales .ContenerHistoria1 {
-  flex: 1;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-name: slide-left;
-}
-.HistoriaMusicales .ContenerHistoria1 .Contenedorimg {
-  text-align: center;
-}
-.HistoriaMusicales .ContenedorHistoria2 {
-  flex: 1;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-name: slide-right;
-}
 .HistoriaMusicales .ContenedorHistoria2 .ImgBandaHistoria2 {
   height: 800px;
   width: 700px;
   padding-bottom: 50px;
 }
-.HistoriaMusicales .ContenedorHistoria2 .TituloCancionHistoria, .HistoriaMusicales .ContenedorHistoria2 .ParrafoHistoriaCancion {
-  text-align: right;
-}
-.HistoriaMusicales .ContenedorHistoria3 {
-  margin: auto;
-  display: flex;
-  flex: 1;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-name: slide-left;
-}
-.HistoriaMusicales .ContenedorHistoria3 .ContenedorimgHistoriaMusical3 {
-  display: flex;
-  justify-content: center;
-}
 .HistoriaMusicales .ContenedorHistoria3 .ImgBandaHistoria3 {
   height: 750px;
   width: 500px;
-  padding-bottom: 50px;
-}
-.HistoriaMusicales .ContenedorHistoria3 .TituloCancionContenedor3, .HistoriaMusicales .ContenedorHistoria3 .ParrafoCancionContenedor3, .HistoriaMusicales .ContenedorHistoria3 .AñoContenedorHistoria {
-  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .ImgBandaHistoria {
-  height: 800px;
+  padding-left: 20px;
+  height: 900px;
   width: 600px;
 }
 
 .AñoContenedorHistoria {
   font-size: 30px;
-  text-align: center;
   padding-bottom: 40px;
   padding-top: 40px;
 }
 
 .ContenedorAñoPublicacion {
-  text-align: center;
   font-size: 40px;
   padding-top: 20px;
 }
 
+@media screen and (max-width: 1140px) {
+  .TituloCancionHistoria, .ParrafoHistoriaCancion {
+    padding-bottom: 20px;
+  }
+  .ParrafoCancionContenedor3 {
+    padding-bottom: 30px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .HistoriaMusicales .ContenedorHistoria2 .ImgBandaHistoria2 {
+    height: 500px;
+    width: 400px;
+  }
+  .HistoriaMusicales .ContenedorHistoria3 .ImgBandaHistoria3 {
+    height: 650px;
+    width: 400px;
+  }
+  .ImgBandaHistoria {
+    height: 700px;
+    width: 400px;
+  }
+}
 /*footer*/
 footer {
   display: block;

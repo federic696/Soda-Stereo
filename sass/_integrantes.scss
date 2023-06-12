@@ -18,7 +18,6 @@
 
     .IntegrantesCaja2{
         @extend .IntegrantesCaja;
-        
         .IntegrantesTexto{
             flex: 1;
         }
@@ -44,7 +43,6 @@
           .IntegrantesTexto {
             order: 2;
           }
-        
           .imgIntegrante {
             order: 1;
           }

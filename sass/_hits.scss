@@ -9,27 +9,8 @@
 
 .ContenedorHitGeneral{
     overflow: hidden;
-    .ContenedorHit1{
-        flex: 1;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-        animation-name: slide-left;
-    }
-    .ContenedorHit2{
-        flex: 1;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-        animation-name: slide-right;
-        .CajaHit2{
-            padding-left: 80px;
-        }
-    }
+   
     .ContenedorHit3{
-        flex: 1;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-        animation-name: slide-left;
-        display: flex;
         text-align: center;
         .ParrafoMusical{
             padding-bottom: 40px;
@@ -38,20 +19,30 @@
             width: 900px;
         }
     }
-    .ContenedorHit4{
-        flex: 1;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-        animation-name: slide-right;
-    }
     .ContenedorHit5{
-        flex: 1;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-        animation-name: slide-left;
         padding-bottom: 40px;
     }
 }
+
+.ContenedorHit2{
+    display: flex;
+    .CajaHit2{
+        flex: 1;
+    }
+    .CajaImgHit2{
+        flex: 1;
+    }
+}
+.ContenedorHit5{
+    display: flex;
+    .CajaHit5{
+        flex: 1;
+    }
+    .CajaImgHit5{
+        flex: 1;
+    }
+}
+
 
 .TitulosHits{
     .TituloHits{
@@ -64,9 +55,6 @@
 }
 
 
-
-
-
 .ImgHits{
     height: 400px;
     width: 600px;
@@ -76,14 +64,45 @@
 .TituloMusical{
     color: white;
     font-size: 50px;
-    text-align: center;
     padding-top: 90px;
 }
 
 .ParrafoMusical{
     color: white;
-    text-align: center;
     padding-top: 20px;
     
 }
 
+@media screen and (max-width: 1000px){
+    .ImgHits{
+        height: 300px;
+        width: 400px;
+        padding: 0;
+    }
+    .ContenedorHitGeneral{
+        .ContenedorHit3{
+            .ImgHits{
+                width: 400px;
+                padding-top: 40px;
+            }
+        }
+    }
+    .ContenedorHit2{
+        flex-direction: column;
+        .CajaHit2{
+            order: 2;
+        }
+        .CajaImgHit2{
+            order: 1;
+        }
+    }
+    .ContenedorHit5{
+        flex-direction: column;
+        .CajaHit5{
+            order: 2;
+        }
+        .CajaImgHit5{
+            order: 1;
+        }
+    }
+}

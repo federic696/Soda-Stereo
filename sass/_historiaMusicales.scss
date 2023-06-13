@@ -1,5 +1,10 @@
 /*HISTORIA MUSICALES*/
 
+@mixin Diseño($height,$width){
+    height: $height;
+    width: $width;
+}
+
 .HistoriaMusicales{
     background-color: #04080F;
     color: white;
@@ -25,8 +30,7 @@
 
     .ContenedorHistoria2{
         .ImgBandaHistoria2{
-            height: 800px;
-            width: 700px;
+            @include Diseño(800px,700px);
             padding-bottom: 50px;
         }
        
@@ -34,8 +38,7 @@
   
     .ContenedorHistoria3{
         .ImgBandaHistoria3{
-            height: 750px;
-            width: 500px;
+            @include Diseño(750px,500px);
             padding-top: 40px;
             padding-bottom: 40px;
         }   
@@ -47,8 +50,7 @@
 
 .ImgBandaHistoria{
     padding-left: 20px;
-    height: 900px;
-    width: 600px;
+    @include Diseño(900px,600px);
 }
 
 .AñoContenedorHistoria{
@@ -63,12 +65,37 @@
     padding-top: 20px;
 }
 
-@media screen and (max-width: 1140px){
+@media screen and (max-width: 1300px){
     .TituloCancionHistoria,.ParrafoHistoriaCancion{
         padding-bottom: 20px;
     }
     .ParrafoCancionContenedor3{
         padding-bottom: 30px;
+    }
+    .HistoriaMusicales{
+        .ContenedorHistoria3{
+            .ImgBandaHistoria3{
+                @include Diseño(850px,300px);
+            }   
+        }
+    
+    }
+    .ImgBandaHistoria{
+        @include Diseño(1000px,500px);
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .HistoriaMusicales{
+        .ContenedorHistoria3{
+            .ImgBandaHistoria3{
+                @include Diseño(550px,300px);
+            }   
+        }
+    
+    }
+    .ImgBandaHistoria{
+        @include Diseño(600px,500px);
     }
 }
 
@@ -76,24 +103,21 @@
     .HistoriaMusicales{
         .ContenedorHistoria2{
             .ImgBandaHistoria2{
-                height: 500px;
-                width: 400px;
+                @include Diseño(500px,400px);
 
             }
            
         }
         .ContenedorHistoria3{
             .ImgBandaHistoria3{
-                height: 650px;
-                width: 400px;
+                @include Diseño(650px,400px);
             }   
         }
     
     }
 
     .ImgBandaHistoria{
-        height: 700px;
-        width: 400px;
+        @include Diseño(700px,400px);
     }
     
 }

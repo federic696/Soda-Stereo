@@ -307,7 +307,7 @@
   padding-top: 20px;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1315px) {
   .TituloCancionHistoria, .ParrafoHistoriaCancion {
     padding-bottom: 20px;
   }

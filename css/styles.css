@@ -348,15 +348,66 @@
   }
 }
 /*footer*/
-footer {
+.footerSoda {
   display: block;
   background-color: #5C6D70;
   width: 100%;
   height: 170px;
+  text-align: center;
 }
 
-.footerSoda {
+.ContenedorFooter {
+  background-color: #5C6D70;
+  padding: auto;
+  margin: auto;
+}
+
+.ListaFooterTerminos, .ListaPaginasFooter {
+  list-style: none;
+  text-decoration: none;
+  text-align: left;
+}
+.ListaFooterTerminos .ListaTerminos, .ListaPaginasFooter .ListaTerminos {
+  padding-bottom: 15px;
+}
+.ListaFooterTerminos .ListaTerminos .TerminosFooter, .ListaPaginasFooter .ListaTerminos .TerminosFooter {
+  text-decoration: none;
+  color: white;
+}
+
+.TituloFooterTerminos, .TituloFooterTerminosLiks {
   text-align: center;
+  font-size: 30px;
+  color: black;
+  padding-top: 10px;
+}
+
+.TituloFooterTerminosLiks {
+  font-size: 25px;
+}
+
+.ListaPaginasFooter .ListaLinks {
+  padding-bottom: 2px;
+}
+.ListaPaginasFooter .ListaLinks .PaginaFooter {
+  text-decoration: none;
+  color: white;
+  padding-left: 15px;
+}
+
+.ListaLinks:hover {
+  transition: 0.5s ease;
+  background: white;
+  border-radius: 15px;
+}
+.ListaLinks:hover .PaginaFooter:hover {
+  color: black;
+  transition: 0.5s ease;
+}
+
+.ListaFooterTerminos:hover .TerminosFooter:hover, .ListaPaginasFooter:hover .TerminosFooter:hover {
+  transition: 1s ease;
+  color: black;
 }
 
 .footerSoda img, p {
@@ -378,6 +429,16 @@ footer {
   margin-right: 50px;
 }
 
+@media screen and (max-width: 784px) {
+  .ListaTerminos {
+    text-align: center;
+    padding-right: 6%;
+  }
+  .ListaLinks {
+    padding-right: 7%;
+    text-align: center;
+  }
+}
 /*Encabezado*/
 .Logo-Link {
   height: 60px;

@@ -1,16 +1,78 @@
 /*footer*/
 
-footer{
+
+
+.footerSoda{
     display: block;
     background-color: #5C6D70;
     width: 100%;
     height: 170px;
-
-}
-
-.footerSoda{
     text-align: center;
 }
+.ContenedorFooter{
+    background-color: #5C6D70;
+    padding: auto;
+    margin: auto;
+}
+.ListaFooterTerminos{
+    list-style: none;
+    text-decoration: none;
+    text-align: left;
+    .ListaTerminos{
+        padding-bottom: 15px;
+        .TerminosFooter{
+            text-decoration: none;
+            color: white;
+        }
+    }   
+  
+    
+     
+}
+
+
+
+.TituloFooterTerminos{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    padding-top: 10px;
+}
+
+.TituloFooterTerminosLiks{
+    @extend .TituloFooterTerminos;
+    font-size: 25px;
+}
+
+.ListaPaginasFooter{
+    @extend .ListaFooterTerminos;
+    .ListaLinks{
+        padding-bottom: 2px;
+        .PaginaFooter{
+            text-decoration: none;
+            color: white;
+            padding-left: 15px;
+        }
+    }
+    
+}
+
+.ListaLinks:hover{
+    transition: 0.5s ease;
+    background:white;
+    border-radius: 15px;
+    .PaginaFooter:hover{
+        color: black;
+        transition: 0.5s ease;
+    }
+}
+.ListaFooterTerminos:hover{
+        .TerminosFooter:hover{
+            transition: 1s ease;
+            color:black;
+        }  
+}
+
 
 .footerSoda img,p{
     margin-top: 5px;
@@ -27,4 +89,15 @@ footer{
     height: 40px;
     margin-left: 50px;
     margin-right: 50px;
+}
+
+@media screen and (max-width: 784px){
+    .ListaTerminos{
+        text-align: center;
+        padding-right: 6%;
+    }
+    .ListaLinks{
+        padding-right: 7%;
+        text-align: center;
+    }
 }

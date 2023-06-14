@@ -367,10 +367,12 @@
   text-decoration: none;
   text-align: left;
 }
-.ListaFooterTerminos .ListaTerminos, .ListaPaginasFooter .ListaTerminos {
+
+.ListaTerminos {
   padding-bottom: 15px;
 }
-.ListaFooterTerminos .ListaTerminos .TerminosFooter, .ListaPaginasFooter .ListaTerminos .TerminosFooter {
+
+.TerminosFooter {
   text-decoration: none;
   color: white;
 }
@@ -386,10 +388,11 @@
   font-size: 25px;
 }
 
-.ListaPaginasFooter .ListaLinks {
+.ListaLinks {
   padding-bottom: 2px;
 }
-.ListaPaginasFooter .ListaLinks .PaginaFooter {
+
+.PaginaFooter {
   text-decoration: none;
   color: white;
   padding-left: 15px;
@@ -400,12 +403,13 @@
   background: white;
   border-radius: 15px;
 }
-.ListaLinks:hover .PaginaFooter:hover {
+
+.PaginaFooter:hover {
   color: black;
   transition: 0.5s ease;
 }
 
-.ListaFooterTerminos:hover .TerminosFooter:hover, .ListaPaginasFooter:hover .TerminosFooter:hover {
+.TerminosFooter:hover {
   transition: 1s ease;
   color: black;
 }

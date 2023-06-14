@@ -16,16 +16,14 @@
     list-style: none;
     text-decoration: none;
     text-align: left;
-    .ListaTerminos{
-        padding-bottom: 15px;
-        .TerminosFooter{
-            text-decoration: none;
-            color: white;
-        }
-    }   
-  
 }
-
+.ListaTerminos{
+    padding-bottom: 15px;
+}  
+.TerminosFooter{
+    text-decoration: none;
+    color: white;
+}
 .TituloFooterTerminos{
     text-align: center;
     font-size: 30px;
@@ -40,32 +38,28 @@
 
 .ListaPaginasFooter{
     @extend .ListaFooterTerminos;
-    .ListaLinks{
-        padding-bottom: 2px;
-        .PaginaFooter{
-            text-decoration: none;
-            color: white;
-            padding-left: 15px;
-        }
-    }
-    
 }
-
+.ListaLinks{
+    padding-bottom: 2px;
+}
+.PaginaFooter{
+    text-decoration: none;
+    color: white;
+    padding-left: 15px;
+}
 .ListaLinks:hover{
     transition: 0.5s ease;
     background:white;
     border-radius: 15px;
-    .PaginaFooter:hover{
-        color: black;
-        transition: 0.5s ease;
-    }
 }
-.ListaFooterTerminos:hover{
-        .TerminosFooter:hover{
-            transition: 1s ease;
-            color:black;
-        }  
+.PaginaFooter:hover{
+    color: black;
+    transition: 0.5s ease;
 }
+.TerminosFooter:hover{
+    transition: 1s ease;
+    color:black;
+} 
 
 
 .footerSoda img,p{
